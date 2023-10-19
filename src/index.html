@@ -7,9 +7,11 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https: //fonts.googleapis.com/css2? family= Roboto:wght@400;700;900 & family= Source+Sans+3:ital@0;1 & display=swap"rel="stylesheet">
-
+    <link
+        href="https: //fonts.googleapis.com/css2? family= Roboto:wght@400;700;900 & family= Source+Sans+3:ital@0;1 & display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -17,10 +19,77 @@
         <div class="container">
             <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
             <p class="hero__text">
-                O maior evento do Brasil começa em 10d 12h 20m 15s
+                O maior evento do Brasil começa em <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Allianz Parque - Barra Funda - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        12/12/2022 ás 19hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta sua vaga
+                </a>
+            </div>
         </div>
     </header>
+
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Front-End</h2>
+                <p class="event__details__description">O desenvolvimento de front-end refere-se à criação da interface
+                    visual de um site ou aplicativo, com foco na experiência do usuário. Os desenvolvedores de front-end
+                    utilizam tecnologias como HTML, CSS e JavaScript para projetar e implementar elementos gráficos,
+                    layouts, animações e interatividade, garantindo que os usuários possam navegar de forma intuitiva e
+                    agradável. Este aspecto crucial do desenvolvimento web desempenha um papel fundamental na aparência
+                    e no desempenho de um site, bem como na capacidade de fornecer uma experiência de usuário positiva e
+                    funcional.</p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="Front-End">
+        </div>
+    </section>
+
+    <section class="event event--ui-ux event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">UI/UX</h2>
+                <p class="event__details__description">UI (User Interface) e UX (User Experience) são dois componentes essenciais no design de produtos digitais. UI refere-se à aparência visual e interatividade da interface do usuário, enquanto UX diz respeito à experiência global do usuário ao interagir com o produto. Um bom design de UI se concentra em tornar uma interface atraente e funcional, enquanto uma excelente UX considera como o usuário se sente ao usar o produto, priorizando usabilidade e satisfação. Ambos são fundamentais para criar produtos digitais bem-sucedidos que atendam às necessidades dos usuários de forma eficaz e agradável.</p>
+            </div>
+            <img class="event__image" src="./images/ui-ux.png" alt="UI/UX">
+        </div>
+    </section>
+
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Data Science</h2>
+                <p class="event__details__description">Data Science é uma disciplina multidisciplinar que utiliza técnicas de estatística, análise de dados e programação para extrair informações obtidas a partir de conjuntos de dados. Os profissionais de ciência de dados coletam, processam e analisam dados para obter insights valiosos e tomar decisões informadas. Essa área desempenha um papel essencial em diversos setores, desde a pesquisa acadêmica até as empresas, ajudando a revelar tendências, padrões e conhecimentos ocultos nos dados, impulsionando a tomada de decisões estratégicas e a criação de soluções inovadoras.</p>
+            </div>
+            <img class="event__image" src="./images/data.png" alt="Data Science">
+        </div>
+    </section>
+
+    <section class="event event--backend event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Back-End</h2>
+                <p class="event__details__description">Back-end é a parte invisível de um sistema ou aplicação web, que lida com o processamento de dados, a lógica de negócios e a gestão dos servidores. Os desenvolvedores de back-end utilizam linguagens de programação, bancos de dados e servidores para criar uma infraestrutura que suporte a funcionalidade de um site ou aplicativo. Isso inclui manipulação de dados, segurança, escalabilidade e otimização de desempenho, garantindo que o front-end (a interface visível) funcione de maneira eficiente. O back-end desempenha um papel crucial na funcionalidade e na confiabilidade de uma aplicação, mesmo que os usuários não o vejam diretamente.</p>
+            </div>
+            <img class="event__image" src="./images/backend.png" alt="Back-End">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./script/main.js"></script>
 </body>
 
